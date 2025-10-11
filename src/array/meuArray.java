@@ -24,7 +24,7 @@ public class meuArray {
         tamanho *= 2;
         int[] dobroArray = new int[tamanho];
 
-        for (int i = 0; i < tamanho; i++) {
+        for (int i = 0; i < tamanho / 2; i++) {
             dobroArray[i] = array[i];
         }
         array = dobroArray;
@@ -34,7 +34,7 @@ public class meuArray {
 
     /// remove element and organize
     public void remove(int posicao) {
-        if(posicao > size || posicao < 0){
+        if (posicao > size || posicao < 0) {
             System.out.println("Posição inválida");
         }
 
@@ -46,13 +46,11 @@ public class meuArray {
     }
 
     /// get position
-    public int get(int posicao){
-        try{
-            return array[posicao];
-        }catch(Exception e) {
-            return 0;
+    public int get(int posicao) {
+        if (posicao < 0 || posicao > size) {
+            throw new IndexOutOfBoundsException("Indice inválido: " + posicao);
         }
-
+        return array[posicao];
     }
 
     /// get size
@@ -62,10 +60,31 @@ public class meuArray {
 
 
     /// get fist number
-    public int getFirst(){
+    public int getFirst() {
         return array[0];
     }
 
+    /// change values
+    public void set(int pos, int valor) {
+        if (pos < 0 || pos > size) {
+            throw new IndexOutOfBoundsException("Posição inválida: " + pos);
+        }
+        array[pos] = valor;
+    }
+
+    /// order with bubble sort
+    public void bubbleSort() {
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - 1 - i; j++) {
+                if (array[j] > array[j + 1]) { //Compara vizinhos em ordem crescente para evistar passar por elementos já testados
+                    int valor = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = valor;
+                }
+            }
+
+        }
+    }
 }
 
 

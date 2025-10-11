@@ -3,11 +3,17 @@
 - Para este diretório será implementado uma estruta que imita um ArrayList em java, sem a utilização da biblioteca já pronta
 
 ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
-1° - Adição de elementos com expansão da lista quando a mesma estiver cheio
-2° - Remoção de um elemento de acordo com posição, fazendo os ajustes de posição necessários
-3° - Get a partir da posição do elemento para buscar ele na lista
-4° - Size() para retornar o tamanho da lista
-5° - Ordenação simples
+1° - Adição de elementos com expansão da lista quando a mesma estiver cheio - FEITO
+2° - Remoção de um elemento de acordo com posição, fazendo os ajustes de posição necessários - FEITO
+3° - Get a partir da posição do elemento para buscar ele na lista - FEITO
+4° - Size() para retornar o tamanho da lista - FEITO
+5° - Ordenação (com bubble sort) - FEITO
 
-EXTRA:
-Ordenação com bubble sort, insertion sort
+APRENDIZADO:
+Após a construção desse programa, pude exercitar a lógica de programação,
+além disso, pude ter um maior compreendimento sobre os métodos internos de um arraylist
+bem como implementar eles. Coisas que acredito serem necessárias para ganho de aprendizado e conhecimento.
+
+Utilização de IA (chatGPT):
+- Listagem dos métodos a serem implentados (sem geração de código)
+- Dúvidas sobre contrução do algortimo de ordenação bem como explicações
