@@ -1,0 +1,11 @@
+**** IMPLEMENTAÇÃO DE UM ESTRUTURA DE DADOS DINÂMICA ****
+
+- Para este diretório será implementado uma estrutura que imita um SetList em java, sem a utilização da biblioteca já pronta
+
+ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
+1° - Adição de elementos e não permitindo repetição dos mesmo, com expansão quando este cheio
+2° - Remoção de um elemento de acordo com posição, fazendo os ajustes de posição necessários
+3° - Get a partir da posição do elemento para buscar ele na lista
+4° - Size() para retornar o tamanho da lista
+5° - Ordenação (com bubble sort)
+

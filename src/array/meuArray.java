@@ -48,7 +48,7 @@ public class meuArray {
     /// get position
     public int get(int posicao) {
         if (posicao < 0 || posicao > size) {
-            throw new IndexOutOfBoundsException("Indice inválido: " + posicao);
+            throw new IndexOutOfBoundsException("Posição inválida: " + posicao);
         }
         return array[posicao];
     }

@@ -37,9 +37,6 @@ public class testeArray {
         retornaArray(array);
         System.out.println("Tamanho do array após remoção: "+array.size());
 
-        array.remove(2);
-        retornaArray(array);
-
         System.out.println("\nTESTANDO AUMENTO DO ARRAY");
         System.out.println("Tamanho do array: "+array.size());
 
@@ -48,9 +45,14 @@ public class testeArray {
             array.add(ran.nextInt(-100, 100));
         }
         System.out.println("Array dobrado com sucesso!");
+        System.out.println("Novo tamanho do array: "+array.size());
 
         retornaArray(array);
-
+        System.out.println("Valor aleatórios inseridos!");
+        array.remove(101);
+        array.remove(102);
+        array.remove(103);
+        array.remove(104);
 
         System.out.println("\nMUDANDO VALOR DE LUGAR");
         System.out.println("Trocando o valor "+array.get(5)+" por 1000");
@@ -60,15 +62,8 @@ public class testeArray {
         System.out.println("\nTESTE DE ORDENAÇÃO");
         array.bubbleSort();
 
-        System.out.println("Array ordenado com sucesso!");
         retornaArray(array);
-
-
-
-
-
-
-
+        System.out.println("Array ordenado com sucesso!");
 
     }
 
