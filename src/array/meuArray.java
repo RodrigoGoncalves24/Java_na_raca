@@ -24,7 +24,7 @@ public class meuArray {
         tamanho *= 2;
         int[] dobroArray = new int[tamanho];
 
-        for (int i = 0; i < tamanho / 2; i++) {
+        for (int i = 0; i < size; i++) {
             dobroArray[i] = array[i];
         }
         array = dobroArray;
