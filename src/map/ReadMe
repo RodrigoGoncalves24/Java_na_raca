@@ -3,12 +3,12 @@
 - Para este diretório será implementado uma estrutura que imita um Map em java, sem a utilização da biblioteca já pronta
 
 ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
-1° - "put(x, y)" -> Adiciona um elemento com chave e valor. Se chave já existir, substitui o valor dela
-2° - "get(x)" -> A partir da chave, retorna o valor dela
+1° - "put(x, y)" -> Adiciona um elemento com chave e valor. Se chave já existir, substitui o valor dela - CONCLUÍDO
+2° - "get(x)" -> A partir da chave, retorna o valor dela - CONCLUÍDO
 3° - "remove(x)" -> Remove chave e valor
 4° - "containsKey(x)" -> Retorna true se uma chave esta presente na lista
 5° - "containsValue(x)" -> Retorna true se um valor esta presente na lista
-6° - "size()" -> Retorna o tamanho da lista
+6° - "size()" -> Retorna o tamanho da lista - CONCLUÍDO
 7° - "isEmpty()" - Retorna se a lista esta vazia
 8° - "clear()" -> Limpa a estrutura
 
