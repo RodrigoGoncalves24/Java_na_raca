@@ -5,7 +5,6 @@ import java.util.Random;
 public class testeSet {
     public static void main(String[] args) {
         Random rand = new Random();
-
         meuSet set = new meuSet();
 
         System.out.println("TESTE DO SETLIST");
@@ -16,28 +15,28 @@ public class testeSet {
         System.out.println("Esta vazio? "+set.isEmpty());
 
         System.out.println("\nAdicionando elementos...");
-        for(int i = 0; i< 20; i++){
+        for(int i = 0; i< 30; i++){
             set.add(rand.nextInt(-10, 10));
         }
         imprimeSet(set);
 
-        System.out.println("Elementos adicionados com sucesso e set dobrado de tammanho!")
-        ;
+        System.out.println("Elementos adicionados com sucesso e set dobrado de tamanho!");
         System.out.println("\nTamanho: "+set.size());
         System.out.println("O set contém o valor 10? "+set.contains(10));
 
-        System.out.println("\nRemovendo elementos: ");
-        set.remove(5);
-        System.out.println("\nTamanho: "+set.size());
-
-        System.out.println("\nLimpando o set: ");
-        System.out.println("Esta vazio? "+set.isEmpty());
+        System.out.println("\nRemovendo elementos...");
+        System.out.println("Removendo elemento 5: "+set.remove(5));
+        System.out.println("Removendo elemento 2: "+set.remove(2));
         System.out.println("Tamanho: "+set.size());
 
         System.out.println("\nOrdenando...");
         set.sort();
         imprimeSet(set);
 
+        System.out.println("\nLimpando o set: ");
+        set.clear();
+        System.out.println("Esta vazio? "+set.isEmpty());
+        System.out.println("Tamanho: "+set.size());
 
 
     }

@@ -13,13 +13,14 @@ public class meuSet {
     }
 
     /// add an element
-    public void add(int elemento) {
+    public boolean add(int elemento) {
         if (!contains(elemento)) {
             if (size == tamanho) dobraTamanho();
             set[size] = elemento;
             size++;
+            return true;
         }
-
+        return false;
     }
 
     /// check if it empty
@@ -27,7 +28,7 @@ public class meuSet {
         return size == 0;
     }
 
-    /// get the element
+    /// contains the element
     public boolean contains(int valor) {
         for (int i = 0; i < size; i++) {
             if (set[i] == valor) return true;
@@ -37,13 +38,19 @@ public class meuSet {
     }
 
     /// remove an element
-    public void remove(int pos) {
-        if (pos < 0 || pos > size) throw new IndexOutOfBoundsException("Posição inválida " + pos);
-        for (int i = pos; i < size - 1; i++) {
-            set[i] = set[i + 1];
+    public boolean remove(int valor) {
+        for (int i = 0; i < size; i++) {
+            if (valor == set[i]) {
+                for (int j = i; j < size-1; j++) {
+                    set[j] = set[j+1];
+                }
+                size--;
+                return true;
+            }
         }
-        size--;
+        return false;
     }
+
 
     /// return the size
     public int size() {
@@ -53,7 +60,7 @@ public class meuSet {
 
     /// double the size
     public void dobraTamanho() {
-        tamanho *= 2;
+        tamanho*=2;
         int[] novoSet = new int[tamanho];
         for (int i = 0; i < size; i++) {
             novoSet[i] = set[i];
@@ -64,18 +71,13 @@ public class meuSet {
     /// clear the set
     public void clear() {
         size = 0;
+        tamanho = 10;
         set = new int[tamanho];
-    }
-
-    /// get the element
-    public int get(int pos){
-        if(pos < 0 || pos > size) throw new IndexOutOfBoundsException("Posição inválida " + pos);
-        return set[pos];
     }
 
     /// order with mergeSort
     public void sort() {
-        mergeSort(set, 0, size-1);
+        mergeSort(set, 0, size - 1);
     }
 
     public void mergeSort(int[] array, int left, int right) {
@@ -107,5 +109,10 @@ public class meuSet {
         for (k = 0; k < temporario.length; k++) array[left + k] = temporario[k];
 
 
+    }
+
+    /// show the values
+    public int get(int pos){
+        return set[pos];
     }
 }

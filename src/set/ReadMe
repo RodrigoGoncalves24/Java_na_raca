@@ -3,9 +3,19 @@
 - Para este diretório será implementado uma estrutura que imita um SetList em java, sem a utilização da biblioteca já pronta
 
 ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
-1° - Adição de elementos e não permitindo repetição dos mesmo, com expansão quando este cheio
-2° - Remoção de um elemento de acordo com posição, fazendo os ajustes de posição necessários
-3° - Get a partir da posição do elemento para buscar ele na lista
-4° - Size() para retornar o tamanho da lista
-5° - Ordenação (com bubble sort)
+1° - "add(x)" -> Adiciona elemento ao setList, não permitindo repetição - CONCLUÍDO
+2° - "remove(x)" -> Remove um elemento da lista, ajustando as posições - CONCLUÍDO
+3° - "contains(x)" -> Retorna true se um elemento faz parte do set - CONCLUÍDO
+4° - "size()" ->  Retorna a quantidade de elementos da lista - CONCLUÍDO
+5° - "isEmpty()" -> Retorna true se o set estiver vazio - CONCLUÍDO
+6° - "clear()" -> remove todos os elementos do set - CONCLUÍDO
 
+APRENDIZADO:
+Após a construção desse programa, foi possível exercitar a lógica de programação
+bem como aprofundar o aprendizado em estruturas de dados. Conhecer os métodos e entender
+o funcionamento dele é uma parte fundamental para a pessoa desenvolvedora que esta em processo de aprendizado.
+
+
+Utilização de IA (chatGPT):
+- Listagem dos métodos a serem implementados
+- Ajuste de lógica para algoritmo de ordenação utilizado
