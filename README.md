@@ -10,7 +10,7 @@ Cada pasta contém:
 
 ## Estruturas implementadas
 ✅ Array dinâmico  
-❌ Set (sem repetição)  
+✅ Set (sem repetição)  
 ❌ Map (chave-valor)  
 ❌ Pilha  
 ❌ Fila  
