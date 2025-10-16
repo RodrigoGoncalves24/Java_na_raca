@@ -76,7 +76,7 @@ public class meuArray {
     public void bubbleSort() {
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
-                if (array[j] > array[j + 1]) { //Compara vizinhos em ordem crescente para evistar passar por elementos já testados
+                if (array[j] > array[j + 1]) { //Compara vizinhos em ordem crescente para evitar passar por elementos já testados
                     int valor = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = valor;
