@@ -5,16 +5,21 @@ import java.util.Random;
 public class testeSet {
     public static void main(String[] args) {
         Random rand = new Random();
-        meuSet set = new meuSet();
+        meuSet<Integer> set = new meuSet<>();
 
         System.out.println("TESTE DO SETLIST");
+        System.out.println("\n ********** TESTE SET COM INTEGER **********");
+        System.out.println("Adicionando valores...");
         set.add(2);
         set.add(5);
         set.add(2);
         set.add(2);
+        imprimeSet(set);
+        System.out.println("Valores adicionados com sucesso!");
         System.out.println("Esta vazio? "+set.isEmpty());
+        System.out.println("Tamanho: "+set.size());
 
-        System.out.println("\nAdicionando elementos...");
+        System.out.println("\nAdicionando mais valores...");
         for(int i = 0; i< 30; i++){
             set.add(rand.nextInt(-10, 10));
         }
@@ -24,19 +29,30 @@ public class testeSet {
         System.out.println("\nTamanho: "+set.size());
         System.out.println("O set contém o valor 10? "+set.contains(10));
 
-        System.out.println("\nRemovendo elementos...");
+        System.out.println("Remoção de elementos...");
         System.out.println("Removendo elemento 5: "+set.remove(5));
         System.out.println("Removendo elemento 2: "+set.remove(2));
         System.out.println("Tamanho: "+set.size());
 
-        System.out.println("\nOrdenando...");
-        set.sort();
-        imprimeSet(set);
+//        System.out.println("\nOrdenando...");
+//        set.sort();
+//        imprimeSet(set);
 
-        System.out.println("\nLimpando o set: ");
+        System.out.println("Limpando o set...");
         set.clear();
         System.out.println("Esta vazio? "+set.isEmpty());
         System.out.println("Tamanho: "+set.size());
+
+        System.out.println("\n ********** TESTE SET COM STRINGS **********");
+        meuSet<String> set2 = new meuSet<>();
+
+        System.out.println("Adicionado valores...");
+        set2.add("a"); /// different strings
+        set2.add("A");
+        set2.add("Rodrigo");
+        set2.add("Rodrigo");
+        set2.add("Victor");
+        imprimeSet(set2);
 
 
     }

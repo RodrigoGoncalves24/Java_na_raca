@@ -1,19 +1,19 @@
 package set;
 
-///  first a setLis with type integer
-public class meuSet {
+///  Set list whit generic type
+public class meuSet <T> {
     private static int tamanho = 10;
-    private static int[] set;
+    private T[] set;
     private static int size;
 
     /// creat a setList
     public meuSet() {
-        set = new int[tamanho];
+        set = (T[]) new Object[tamanho]; /// creat an generic array
         size = 0;
     }
 
-    /// add an element
-    public boolean add(int elemento) {
+    /// add an element, add a generic elemento - String, Integer, Double, Boolean
+    public boolean add(T elemento) {
         if (!contains(elemento)) {
             if (size == tamanho) dobraTamanho();
             set[size] = elemento;
@@ -28,8 +28,8 @@ public class meuSet {
         return size == 0;
     }
 
-    /// contains the element
-    public boolean contains(int valor) {
+    /// contains the element, search for a generic element
+    public boolean contains(T valor) {
         for (int i = 0; i < size; i++) {
             if (set[i] == valor) return true;
         }
@@ -38,7 +38,7 @@ public class meuSet {
     }
 
     /// remove an element
-    public boolean remove(int valor) {
+    public boolean remove(T valor) {
         for (int i = 0; i < size; i++) {
             if (valor == set[i]) {
                 for (int j = i; j < size-1; j++) {
@@ -61,7 +61,7 @@ public class meuSet {
     /// double the size
     public void dobraTamanho() {
         tamanho*=2;
-        int[] novoSet = new int[tamanho];
+        T[] novoSet = (T[]) new Object[tamanho];
         for (int i = 0; i < size; i++) {
             novoSet[i] = set[i];
         }
@@ -72,47 +72,47 @@ public class meuSet {
     public void clear() {
         size = 0;
         tamanho = 10;
-        set = new int[tamanho];
+        set = (T[]) new Object[tamanho];
     }
 
     /// order with mergeSort
-    public void sort() {
-        mergeSort(set, 0, size - 1);
-    }
-
-    public void mergeSort(int[] array, int left, int right) {
-        if (left < right) {
-            int mid = (right + left) / 2;
-
-            mergeSort(array, left, mid);
-            mergeSort(array, mid + 1, right);
-
-            merge(array, left, right, mid);
-        }
-
-    }
-
-    public void merge(int[] array, int left, int right, int mid) {
-        int[] temporario = new int[right - left + 1];
-        int i = left;
-        int j = mid + 1;
-        int k = 0;
-
-        while (i <= mid && j <= right) {
-            if (array[i] <= array[j]) temporario[k++] = array[i++];
-            else temporario[k++] = array[j++];
-        }
-
-        while (i <= mid) temporario[k++] = array[i++];
-        while (j <= right) temporario[k++] = array[j++];
-
-        for (k = 0; k < temporario.length; k++) array[left + k] = temporario[k];
-
-
-    }
+//    public void sort() {
+//        mergeSort(set, 0, size - 1);
+//    }
+//
+//    public void mergeSort(T[] array, int left, int right) {
+//        if (left < right) {
+//            int mid = (right + left) / 2;
+//
+//            mergeSort(array, left, mid);
+//            mergeSort(array, mid + 1, right);
+//
+//            merge(array, left, right, mid);
+//        }
+//
+//    }
+//
+//    public void merge(T[] array, int left, int right, int mid) {
+//        int[] temporario = new int[right - left + 1];
+//        int i = left;
+//        int j = mid + 1;
+//        int k = 0;
+//
+//        while (i <= mid && j <= right) {
+//            if (array[i] <= array[j]) temporario[k++] = array[i++];
+//            else temporario[k++] = array[j++];
+//        }
+//
+//        while (i <= mid) temporario[k++] = array[i++];
+//        while (j <= right) temporario[k++] = array[j++];
+//
+//        for (k = 0; k < temporario.length; k++) array[left + k] = temporario[k];
+//
+//
+//    }
 
     /// show the values
-    public int get(int pos){
+    public T get(int pos){
         return set[pos];
     }
 }
