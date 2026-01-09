@@ -2,7 +2,7 @@
 
 - Para este diretório será implementado uma estrutura que imita um SetList em java, sem a utilização da biblioteca já pronta
 
-ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
+ALGUMAS OPERAÇÕES IMPLEMENTADAS:
 1° - "add(x)" -> Adiciona elemento ao setList, não permitindo repetição - CONCLUÍDO
 2° - "remove(x)" -> Remove um elemento da lista, ajustando as posições - CONCLUÍDO
 3° - "contains(x)" -> Retorna true se um elemento faz parte do set - CONCLUÍDO
@@ -13,7 +13,7 @@ ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
 APRENDIZADO:
 Após a construção desse programa, foi possível exercitar a lógica de programação
 bem como aprofundar o aprendizado em estruturas de dados. Conhecer os métodos e entender
-o funcionamento dele é uma parte fundamental para a pessoa desenvolvedora que esta em processo de aprendizado.
+seus funcionamentos é uma parte fundamental para a pessoa que esta em processo de aprendizado.
 
 
 Utilização de IA (chatGPT):

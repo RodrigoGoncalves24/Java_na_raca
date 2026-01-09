@@ -2,7 +2,7 @@
 
 - Para este diretório será implementado uma estrutura que imita um ArrayList em java, sem a utilização da biblioteca já pronta
 
-ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
+ALGUMAS OPERAÇÕES IMPLEMENTADAS:
 1° - "add(x)" -> Adição de um elemento, fazendo expansão do mesmo se cheio - CONCLUÍDO
 2° - "remove(x)" -> Remoção de um elemento presente na lista - CONCLUÍDO
 3° - "get(x)" -> Retornar um elemento a partir de uma posição - CONCLUÍDO
@@ -14,8 +14,8 @@ Extra:
 APRENDIZADO:
 Após a construção desse algoritmo, foi possível exercitar a lógica de programação
 bem como ter uma maior compreensão dos métodos internos de um arrayList.
-Conhecer seu métodos e entender seus funcionamento tem grande importância no aprendizado.
+Conhecer seu métodos e entender seus funcionamentos tem grande importância no aprendizado pessoal e profissional.
 
 Utilização de IA (chatGPT):
 - Listagem dos métodos a serem implentados (sem geração de código)
-- Dúvidas sobre contrução do algortimo de ordenação bem como explicações
+- Dúvidas sobre construção do algortimo de ordenação bem como explicações
