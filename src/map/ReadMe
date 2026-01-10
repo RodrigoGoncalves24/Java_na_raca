@@ -2,18 +2,21 @@
 
 - Para este diretório será implementado uma estrutura que imita um Map em java, sem a utilização da biblioteca já pronta
 
-ALGUMAS OPERAÇÕES QUE SERÁ IMPLEMENTADO:
+ALGUMAS OPERAÇÕES IMPLEMENTADAS:
 1° - "put(x, y)" -> Adiciona um elemento com chave e valor. Se chave já existir, substitui o valor dela - CONCLUÍDO
 2° - "get(x)" -> A partir da chave, retorna o valor dela - CONCLUÍDO
-3° - "remove(x)" -> Remove chave e valor
-4° - "containsKey(x)" -> Retorna true se uma chave esta presente na lista
-5° - "containsValue(x)" -> Retorna true se um valor esta presente na lista
+3° - "remove(x)" -> Remove chave e valor - CONCLUÍDO
+4° - "containsKey(x)" -> Retorna true se uma chave esta presente na lista - CONCLUÍDO
+5° - "containsValue(x)" -> Retorna true se um valor esta presente na lista - CONCLUÍDO
 6° - "size()" -> Retorna o tamanho da lista - CONCLUÍDO
-7° - "isEmpty()" - Retorna se a lista esta vazia
-8° - "clear()" -> Limpa a estrutura
+7° - "isEmpty()" - Retorna se a lista esta vazia - CONCLUÍDO
+8° - "clear()" -> Limpa a estrutura - CONCLUÍDO
 
 APRENDIZADO:
-
+Durante o desenvolvimento dessa estrura de dados foi possível trabalhar a lógica de programação bem como por em prática conceitos aprendidos anteriormente.
+A partir dessa implementação, pude exercitar minha lógica, desenvolver olhar critíco em tomadas de decisões para modos de busca dentro de um array e
+desenvolver novos aprendizados.
 
 Utilização de IA (chatGPT):
-
+Juntamente com a IA, pude entender o funcionamento das principais opreçãoes que são implementadas em um map, bem como questionar se determinadas decisões
+(ordenação internar, remoção de elementos) seria aplicações válidas dentro da estrutura desenvolvida.
