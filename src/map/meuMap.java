@@ -1,20 +1,21 @@
 package map;
 
-public class meuMap {
-    private int[] keys;
-    private String[] values;
+/// turning map to a generic type
+public class meuMap<K, V> {
+    private K[] keys;
+    private V[] values;
     private int size;
     private int tamanho = 5;
 
     /// constructor
     public meuMap() {
-        keys = new int[tamanho];
-        values = new String[tamanho];
+        keys = (K[]) new Object[tamanho];
+        values = (V[]) new Object[tamanho];
         size = 1;
     }
 
     /// put - change the value with that key
-    public void put(int key, String value) {
+    public void put(K key, V value) {
         if (size == tamanho) doubleSize();
         int index = indexOfKey(key);
         if (index == -1) {
@@ -28,7 +29,7 @@ public class meuMap {
     }
 
     ///  contains key
-    public boolean containsKey(int key) {
+    public boolean containsKey(K key) {
         for (int i = 0; i <= size - 1; i++) {
             if (keys[i] == key) return true;
         }
@@ -37,13 +38,13 @@ public class meuMap {
 
     public boolean containsValue(String value){
         for (int i = 0; i < size - 1; i++){
-            if(values[i].equalsIgnoreCase(value) ) return true;
+            if(values[i].equals(value) ) return true;
         }
         return false;
     }
 
     /// return index of key
-    private int indexOfKey(int key) {
+    private int indexOfKey(K key) {
         for (int i = 0; i < size; i++) {
             if (keys[i] == key) return i;
         }
@@ -51,7 +52,7 @@ public class meuMap {
     }
 
     /// get value from key
-    public String get(int key){
+    public V get(K key){
         int index = indexOfKey(key);
         if(index != -1) return values[index];
         else return null;
@@ -64,8 +65,8 @@ public class meuMap {
 
     private void doubleSize() {
         tamanho *= 2;
-        String[] tempValue = new String[tamanho];
-        int[] tempKey = new int[tamanho];
+        V[] tempValue = (V[]) new Object[tamanho];
+        K[] tempKey = (K[]) new Object[tamanho];
 
         for(int i = 0; i< size; i++){
             tempValue[i] = values[i];
@@ -76,7 +77,7 @@ public class meuMap {
     }
 
     /// remove
-    public void remove(int key){
+    public void remove(K key){
         int index = indexOfKey(key);
         if(index != -1){
             for(int i = index; i < size; i++){
@@ -93,8 +94,8 @@ public class meuMap {
     }
 
     public void clear(){
-        values = new String[tamanho];
-        keys = new int[tamanho];
+        values = (V[]) new Object[tamanho];
+        keys = (K[])new Object[tamanho];
         size = 0;
     }
 
