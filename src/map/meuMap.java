@@ -11,7 +11,7 @@ public class meuMap<K, V> {
     public meuMap() {
         keys = (K[]) new Object[tamanho];
         values = (V[]) new Object[tamanho];
-        size = 1;
+        size = 0;
     }
 
     /// put - change the value with that key
@@ -36,9 +36,9 @@ public class meuMap<K, V> {
         return false;
     }
 
-    public boolean containsValue(String value){
+    public boolean containsValue(V value){
         for (int i = 0; i < size - 1; i++){
-            if(values[i].equals(value) ) return true;
+            if(values[i] == value ) return true;
         }
         return false;
     }
@@ -97,6 +97,15 @@ public class meuMap<K, V> {
         values = (V[]) new Object[tamanho];
         keys = (K[])new Object[tamanho];
         size = 0;
+    }
+
+    public void print(){
+        for (int i = 0; i< size; i++){
+            if(containsKey(keys[i])){
+                System.out.println(keys[i]+" -> "+values[i]);
+            }
+
+        }
     }
 
 }
