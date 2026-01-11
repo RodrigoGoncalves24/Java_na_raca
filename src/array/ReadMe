@@ -1,21 +1,21 @@
-**** IMPLEMENTAÇÃO DE UM ESTRUTURA DE DADOS DINÂMICA ****
+**** SOME BASIC OPERATIONS ****
 
-- Para este diretório será implementado uma estrutura que imita um ArrayList em java, sem a utilização da biblioteca já pronta
+- For this directory, a copy of the arrayList structure was implemented
 
-ALGUMAS OPERAÇÕES IMPLEMENTADAS:
-1° - "add(x)" -> Adição de um elemento, fazendo expansão do mesmo se cheio - CONCLUÍDO
-2° - "remove(x)" -> Remoção de um elemento presente na lista - CONCLUÍDO
-3° - "get(x)" -> Retornar um elemento a partir de uma posição - CONCLUÍDO
-4° - "size()" -> Retorna o tamanho da lista - CONCLUÍDA
+OPERATIONS:
+1° - "add(x)" -> Adds an element and double its size when full - CHECK
+2° - "remove(x)" -> Removes an element - CHECK
+3° - "get(x)" -> Returns the element at a given index - CHECK
+4° - "size()" -> Returns the size of the array - CHECK
 
 Extra:
-5° "sort()" -> Ordenação da lista com bubble sort -> CONCLUÍDO
+5° "sort()" -> Order by bubble sort - CHECK
 
-APRENDIZADO:
-Após a construção desse algoritmo, foi possível exercitar a lógica de programação
-bem como ter uma maior compreensão dos métodos internos de um arrayList.
-Conhecer seu métodos e entender seus funcionamentos tem grande importância no aprendizado pessoal e profissional.
+Learning goals:
+After building this algorithm, it was possible to practice programming logic and
+gain a deeper understanding of the internal methods of an ArrayList.
+Understanding its methods and how they work is highly important for both personal and professional development.
 
-Utilização de IA (chatGPT):
-- Listagem dos métodos a serem implentados (sem geração de código)
-- Dúvidas sobre construção do algortimo de ordenação bem como explicações
+AI-assisted development:
+- Listing the methods to be implemented (without code generation)
+- Clarifying questions about the sorting algorithm construction, along with explanations

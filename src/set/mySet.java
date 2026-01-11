@@ -1,6 +1,6 @@
 package set;
 
-///  Set list whit generic type
+///  Set list to generic type
 public class meuSet <T> {
     private static int tamanho = 10;
     private T[] set;
@@ -8,11 +8,11 @@ public class meuSet <T> {
 
     /// creat a setList
     public meuSet() {
-        set = (T[]) new Object[tamanho]; /// creat an generic array
+        set = (T[]) new Object[tamanho]; /// creat a generic array
         size = 0;
     }
 
-    /// add an element, add a generic elemento - String, Integer, Double, Boolean
+    /// add an element, add a generic element - String, Integer, Double, Boolean
     public boolean add(T elemento) {
         if (!contains(elemento)) {
             if (size == tamanho) dobraTamanho();
@@ -23,7 +23,7 @@ public class meuSet <T> {
         return false;
     }
 
-    /// check if it empty
+    /// check if it empties
     public boolean isEmpty() {
         return size == 0;
     }

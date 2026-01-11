@@ -1,21 +1,19 @@
-**** IMPLEMENTAÇÃO DE UM ESTRUTURA DE DADOS DINÂMICA ****
+**** SOME BASIC OPERATIONS ****
 
-- Para este diretório será implementado uma estrutura que imita um SetList em java, sem a utilização da biblioteca já pronta
+- For this directory, a copy of the set structure was implemented
 
-ALGUMAS OPERAÇÕES IMPLEMENTADAS:
-1° - "add(x)" -> Adiciona elemento ao setList, não permitindo repetição - CONCLUÍDO
-2° - "remove(x)" -> Remove um elemento da lista, ajustando as posições - CONCLUÍDO
-3° - "contains(x)" -> Retorna true se um elemento faz parte do set - CONCLUÍDO
-4° - "size()" ->  Retorna a quantidade de elementos da lista - CONCLUÍDO
-5° - "isEmpty()" -> Retorna true se o set estiver vazio - CONCLUÍDO
-6° - "clear()" -> remove todos os elementos do set - CONCLUÍDO
+OPERATIONS:
+1° - "add(x)" -> Adds an element without duplication - CHECK
+2° - "remove(x)" -> Removes an element and updates the structure accordingly  - CHECK
+3° - "contains(x)" -> Returns true if an element is present in the set - CHECK
+4° - "size()" ->  Returns the size of the set - CHECK
+5° - "isEmpty()" -> Returns true if the set is empty - CHECK
+6° - "clear()" -> Remove all elements from the set - CHECK
 
-APRENDIZADO:
-Após a construção desse programa, foi possível exercitar a lógica de programação
-bem como aprofundar o aprendizado em estruturas de dados. Conhecer os métodos e entender
-seus funcionamentos é uma parte fundamental para a pessoa que esta em processo de aprendizado.
+Learning goals:
+After building this program, it was possible to practice programming logic and deepen the understanding of data structures.
+Understanding the methods and how they work is a fundamental part of the learning process.
 
-
-Utilização de IA (chatGPT):
-- Listagem dos métodos a serem implementados
-- Ajuste de lógica para algoritmo de ordenação utilizado
+AI-assisted development:
+- Showing how the method was implemented
+- Fixing logic issues and explaining the algorithm flow
