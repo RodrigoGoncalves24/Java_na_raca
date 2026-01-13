@@ -1,7 +1,7 @@
 package stack;
 
-public class myStack {
-    private int[] stack;
+public class myStack<T> {
+    private T[] stack;
     private int size = 0;
     private int tamanho = 10;
 
@@ -10,23 +10,26 @@ public class myStack {
     }
 
     /// add element
-    public void push(int x) {
-        if (size == 0) stack = new int[tamanho];
-        if (size == tamanho) doubleSize(); /// double size of stack
+    public void push(T x) {
+        if (size == 0) {
+            stack = (T[]) new Object[tamanho];
+        }else if (size == tamanho){
+            doubleSize(); /// double size of stack
+        }
         stack[size] = x;
         size++;
     }
 
     /// remove and return the top element
-    public int pop() {
+    public T pop() {
         if (size == 0) throw new StackException("The stack is empty, no element can be removed");
-        int popNum = stack[size - 1];
+        T popNum = stack[size - 1];
         size--;
         return popNum;
     }
 
     /// method to return the top element
-    public int peek(){
+    public T peek(){
         if(size == 0) throw new StackException("The stack is empty, no element can be removed");
         return stack[size-1];
     }
@@ -45,7 +48,7 @@ public class myStack {
     /// method to double the stack size if it's equals tamanho
     private void doubleSize() {
         tamanho *= 2;
-        int[] stackTemp = new int[tamanho];
+        T[] stackTemp = (T[])new Object[tamanho];
 
         for (int i = 0; i < size; i++) {
             stackTemp[i] = stack[i];

@@ -10,5 +10,9 @@ OPERATIONS:
 5° - "size()" -> Return the size of elements - CHECK
 
 Learning goals:
+After applying this data structure, it was possible to better understand the logic behind inserting and removing elements at the top of the list,
+gain a clearer understanding of how a stack structure works, and practice programming logic.
 
 AI-assisted development:
+The use of AI was focused on explaining the methods to be implemented in the data structure,
+as well as identifying better ways to handle and return possible errors during element insertion and removal when the structure is empty.
