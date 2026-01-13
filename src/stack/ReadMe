@@ -1,0 +1,14 @@
+**** SOME BASIC OPERATIONS ****
+
+- For this directory, i will implement a copy of the stack structure
+
+OPERATIONS:
+1° - "push(x)" -> Adds an element on the top of the stack - CHECK
+2° - "pop()" -> Remove and return the top element - CHECK
+3° - "peek()" -> Return the top element without removing it - CHECK
+4° - "isEmpty()" -> Return true if the stack is empty - CHECK
+5° - "size()" -> Return the size of elements - CHECK
+
+Learning goals:
+
+AI-assisted development:
