@@ -1,0 +1,17 @@
+**** SOME BASIC OPERATIONS ****
+
+- For this directory, a copy of the map structure was implemented
+
+OPERATIONS (LIFO):
+1° - "enqueue(x)" -> Adds an element - OK
+2° - "dequeue()" -> Removes and returns the element from the beginning - OK
+3° - "peek()" -> Returns the first element without removing ti - OK
+4° - "size()" -> Return the size of the queue - OK
+5° - "isEmpty()" -> Returns true if it's empty - OK
+6° - "clear()" -> Clear the structure - OK
+7° - "print()" -> Print the elements of the structure - OK
+
+Learning goals:
+
+AI-assisted development:
+
