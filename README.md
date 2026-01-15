@@ -13,10 +13,10 @@ Cada pasta contém:
 ✅ Set (sem repetição)  
 ✅ Map (chave-valor)  
 ✅ Pilha  
-✅ Fila
-❌ LinkedList
-❌ Tree
-❌ Graph
+✅ Fila 
+❌ LinkedList 
+❌ Tree 
+❌ Graph 
 
 
 ## Objetivo
