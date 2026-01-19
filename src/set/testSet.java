@@ -2,10 +2,10 @@ package set;
 
 import java.util.Random;
 
-public class testeSet {
+public class testSet {
     public static void main(String[] args) {
         Random rand = new Random();
-        meuSet<Integer> set = new meuSet<>();
+        mySet<Integer> set = new mySet<>();
 
         System.out.println("TESTE DO SETLIST");
         System.out.println("\n ********** TESTE SET COM INTEGER **********");
@@ -44,7 +44,7 @@ public class testeSet {
         System.out.println("Tamanho: "+set.size());
 
         System.out.println("\n ********** TESTE SET COM STRINGS **********");
-        meuSet<String> set2 = new meuSet<>();
+        mySet<String> set2 = new mySet<>();
 
         System.out.println("Adicionado valores...");
         set2.add("a"); /// different strings
@@ -57,7 +57,7 @@ public class testeSet {
 
     }
 
-    public static void imprimeSet(meuSet set){
+    public static void imprimeSet(mySet set){
         for(int i = 0; i<set.size(); i++){
             System.out.println(i+"° "+set.get(i));
         }

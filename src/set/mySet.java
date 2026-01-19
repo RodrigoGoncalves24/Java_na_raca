@@ -1,13 +1,13 @@
 package set;
 
 ///  Set list to generic type
-public class meuSet <T> {
-    private static int tamanho = 10;
+public class mySet<T> {
+    private int tamanho = 10;
     private T[] set;
-    private static int size;
+    private int size;
 
     /// creat a setList
-    public meuSet() {
+    public mySet() {
         set = (T[]) new Object[tamanho]; /// creat a generic array
         size = 0;
     }

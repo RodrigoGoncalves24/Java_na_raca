@@ -2,9 +2,9 @@ package array;
 
 import java.util.Random;
 
-public class testeArray {
+public class testArray {
     public static void main(String[] args) throws Exception {
-        meuArray array = new meuArray();
+        myArray array = new myArray();
         Random ran = new Random();
 
         System.out.println("INSERINDO ELEMENTOS");
@@ -67,7 +67,7 @@ public class testeArray {
 
     }
 
-    public static void retornaArray(meuArray array){
+    public static void retornaArray(myArray array){
         for(int i =0;  i< array.size(); i++){
             System.out.println(i+"° "+array.get(i));
         }

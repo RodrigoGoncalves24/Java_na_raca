@@ -1,26 +1,26 @@
 package array;
 
-public class meuArray {
+public class myArray {
     private static int[] array;
     private static int tamanho = 10;
     private static int size = 0;
 
     /// creat the array with 10 positions
-    public meuArray() {
+    public myArray() {
         array = new int[tamanho];
     }
 
     /// add element
     public void add(int valor) {
         if (size == tamanho) {
-            dobrarArray(); /// method to double
+            doubleSize(); /// method to double
         }
         array[size] = valor;
         size++;
     }
 
     /// double the size and put the elements for the correct position
-    private void dobrarArray() {
+    private void doubleSize() {
         tamanho *= 2;
         int[] dobroArray = new int[tamanho];
 

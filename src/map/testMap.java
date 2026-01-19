@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class testeMap {
+public class testMap {
     public static void main(String[] args) {
-        meuMap<Integer, String> mapIntStrg = new meuMap();
+        myMap<Integer, String> mapIntStrg = new myMap();
         Random rand = new Random();
 
 
@@ -52,19 +52,19 @@ public class testeMap {
         System.out.println("\nTestando mapa genérico");
 
         System.out.println("\nMapa só de String");
-        meuMap<String, String> mapStr = new meuMap();
+        myMap<String, String> mapStr = new myMap();
         mapStr.put("A", "B");
         mapStr.put("R", "L");
         mapStr.print();
 
         System.out.println("\nMapa só de inteiro");
-        meuMap<Integer, Integer> mapInt = new meuMap();
+        myMap<Integer, Integer> mapInt = new myMap();
         mapInt.put(5, 6);
         mapInt.put(8, 2);
         mapInt.print();
 
         System.out.println("\nMapa de String para chave e número para valores");
-        meuMap<String, Integer> mapStrInt = new meuMap();
+        myMap<String, Integer> mapStrInt = new myMap();
         mapStrInt.put("A", 6);
         mapStrInt.put("R", 2);
         mapStrInt.print();

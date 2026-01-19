@@ -2,7 +2,7 @@
 
 - For this directory, i will implement a copy of the stack structure
 
-OPERATIONS:
+OPERATIONS (LIFO):
 1° - "push(x)" -> Adds an element on the top of the stack - CHECK
 2° - "pop()" -> Remove and return the top element - CHECK
 3° - "peek()" -> Return the top element without removing it - CHECK

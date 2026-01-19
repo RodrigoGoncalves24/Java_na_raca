@@ -1,22 +1,22 @@
-**** IMPLEMENTAÇÃO DE UM ESTRUTURA DE DADOS DINÂMICA ****
+**** SOME BASIC OPERATIONS ****
 
-- Para este diretório será implementado uma estrutura que imita um Map em java, sem a utilização da biblioteca já pronta
+- For this directory, a copy of the map structure was implemented
 
-ALGUMAS OPERAÇÕES IMPLEMENTADAS:
-1° - "put(x, y)" -> Adiciona um elemento com chave e valor. Se chave já existir, substitui o valor dela - CONCLUÍDO
-2° - "get(x)" -> A partir da chave, retorna o valor dela - CONCLUÍDO
-3° - "remove(x)" -> Remove chave e valor - CONCLUÍDO
-4° - "containsKey(x)" -> Retorna true se uma chave esta presente na lista - CONCLUÍDO
-5° - "containsValue(x)" -> Retorna true se um valor esta presente na lista - CONCLUÍDO
-6° - "size()" -> Retorna o tamanho da lista - CONCLUÍDO
-7° - "isEmpty()" - Retorna se a lista esta vazia - CONCLUÍDO
-8° - "clear()" -> Limpa a estrutura - CONCLUÍDO
+OPERATIONS:
+1° - "put(x, y)" -> Adds an element with the key and the value. if key already exist, change its value - CHECK
+2° - "get(x)" -> Returns the value from the key - CHECK
+3° - "remove(x)" -> Removes value and key - CHECK
+4° - "containsKey(x)" -> Returns true if a key is present in the map - CHECK
+5° - "containsValue(x)" -> Returns true if a value valor is present - CHECK
+6° - "size()" -> Return the size of the map - CHECK
+7° - "isEmpty()" - Returns true if the map is empty - CHECK
+8° - "clear()" -> Clear the structure - CHECK
 
-APRENDIZADO:
-Durante o desenvolvimento dessa estrura de dados foi possível trabalhar a lógica de programação bem como por em prática conceitos aprendidos anteriormente.
-A partir dessa implementação, pude exercitar minha lógica, desenvolver olhar critíco em tomadas de decisões para modos de busca dentro de um array e
-desenvolver novos aprendizados.
+Learning goals:
+During the development of this data structure, it was possible to practice programming logic and apply concepts learned previously.
+Through this implementation, I was able to improve my logical thinking, develop a critical approach to decision-making
+for search strategies within an array, and gain new insights.
 
-Utilização de IA (chatGPT):
-Juntamente com a IA, pude entender o funcionamento das principais opreçãoes que são implementadas em um map, bem como questionar se determinadas decisões
-(ordenação internar, remoção de elementos) seria aplicações válidas dentro da estrutura desenvolvida.
+AI-assisted development:
+With the help of AI, I was able to understand how the main operations implemented in a map work,
+as well as question whether certain decisions (such as internal ordering and element removal) were valid choices for the developed data structure.

@@ -1,14 +1,14 @@
 package map;
 
 /// turning map to a generic type
-public class meuMap<K, V> {
+public class myMap<K, V> {
     private K[] keys;
     private V[] values;
     private int size;
     private int tamanho = 5;
 
     /// constructor
-    public meuMap() {
+    public myMap() {
         keys = (K[]) new Object[tamanho];
         values = (V[]) new Object[tamanho];
         size = 0;
