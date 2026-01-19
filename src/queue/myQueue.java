@@ -1,25 +1,25 @@
 package queue;
 
-public class myQueue {
+public class myQueue <T> {
     private int tamanhoMax = 10;
     private int size = 0;
-    private int [] queue;
+    private T[] queue;
 
     /// create the struture
     public myQueue(){
-        queue = new int[tamanhoMax];
+        queue = (T[])new Object[tamanhoMax];
     }
 
     /// ads an element
-    public void enqueue(int x) {
+    public void enqueue(T x) {
         if (size == tamanhoMax) doubleSize();
         queue[size] = x;
         size++;
     }
 
     ///  Removes and returns the first element
-    public int dequeue(){
-        int element = queue[0];
+    public T dequeue(){
+        T element = queue[0];
         for (int i = 0; i< size-1; i++){
             queue[i] = queue[i+1];
         }
@@ -29,7 +29,7 @@ public class myQueue {
     }
 
     /// Returns the first element without removing it
-    public int peek(){
+    public T peek(){
         return queue[0];
     }
 
@@ -46,7 +46,7 @@ public class myQueue {
 
     /// Clear the structure
     public void clear(){
-        queue = new int[tamanhoMax];
+        queue = (T[]) new Object[tamanhoMax];
         size = 0;
     }
 
@@ -60,7 +60,7 @@ public class myQueue {
     /// double size of the queue
     private void doubleSize() {
         int novoTamanho = tamanhoMax * 2;
-        int[] queueTemp = new int [novoTamanho];
+        T[] queueTemp = (T[]) new Object[novoTamanho];
 
         for (int i = 0; i< size; i++){
             queueTemp[i] = queue[i];

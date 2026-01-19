@@ -2,7 +2,7 @@
 
 - For this directory, a copy of the map structure was implemented
 
-OPERATIONS (LIFO):
+OPERATIONS (FIFO):
 1° - "enqueue(x)" -> Adds an element - OK
 2° - "dequeue()" -> Removes and returns the element from the beginning - OK
 3° - "peek()" -> Returns the first element without removing ti - OK
@@ -12,6 +12,9 @@ OPERATIONS (LIFO):
 7° - "print()" -> Print the elements of the structure - OK
 
 Learning goals:
+Through the implementation of a queue data structure, it was possible to practice the core FIFO (First In, First Out) concept.
+This involved removing the first element and reallocating the remaining elements to preserve
+the queue’s behavior, while also exercising programming logic.
 
 AI-assisted development:
-
+AI was used to explain the main queue methods
