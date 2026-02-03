@@ -4,7 +4,7 @@
 
 OPERATIONS:
 1° "addFirst(x)" -> Inserts an element at the beginning of the list. - CHECK
-2° "addLast(x)" -> Inserts an element at the end of the list.
+2° "addLast(x)" -> Inserts an element at the end of the list. - CHECK
 3° "removeFirst()" -> Removes and returns the first element of the list.
 4° "removeLast()" -> Removes and returns the last element of the list.
 5° "get(index)" -> Returns the element at the specified position in the list.

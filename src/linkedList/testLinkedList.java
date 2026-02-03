@@ -15,16 +15,35 @@ public class testLinkedList {
         linkedListInt.print();
 
         System.out.print("\nTail: ");
-        linkedListInt.printTail(); /// problema com o tail
+        linkedListInt.printTail();
+
+        System.out.print("\nHead: ");
+        linkedListInt.printHead();
 
         System.out.println("\nAdicioando ao final da lista");
         linkedListInt.addLast(9);
+        linkedListInt.addLast(15);
+        linkedListInt.addLast(0);
 
         System.out.println("Printando elementos");
         linkedListInt.print();
 
         System.out.print("\nTail: ");
-        linkedListInt.printTail(); /// problema com o tail
+        linkedListInt.printTail();
+
+        System.out.println("\nRemovendo primeiro elemento");
+        linkedListInt.removeFirst();
+        linkedListInt.print();
+        System.out.println("\nNovo head: ");
+        linkedListInt.printHead();
+
+        myLinkedList lista = new myLinkedList();
+           lista.addFirst(5);
+           lista.addFirst(6);
+          lista.removeFirst();
+          lista.print();
+
+
 
 
     }

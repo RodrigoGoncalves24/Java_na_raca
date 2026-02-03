@@ -13,17 +13,16 @@ public class myLinkedList {
         Node novo = new Node(value);
         if (head == null) {
             head = novo;
-        } else if (head.next == null) {
+        } else if (tail == null) {
+           tail = head;
+           head = novo;
+           head.next = tail;
+           tail.prev = head;
+        } else {
             Node aux = head;
             head = novo;
-            tail = aux;
             head.next = aux;
-            tail.prev = head;
-        } else {
-            Node aux2 = head;
-            head = novo;
-            head.next = aux2;
-            aux2.prev = head;
+            aux.prev = head;
         }
         size++;
     }
@@ -33,28 +32,51 @@ public class myLinkedList {
         Node novo = new Node(value);
         if (head == null) {
             head = novo;
-        }else if(head.next == null){
+        }else if(tail == null){
+            tail = novo;
+            head.next = tail;
+            tail.prev = head;
+        }else{
             Node aux = tail;
-            head = aux;
             tail = novo;
             tail.prev = aux;
-            head.next = tail;
-        }else{
-            Node aux2 = tail;
-            tail = novo;
-            tail.prev = aux2;
-            aux2.next = tail;
+            aux.next = tail;
         }
         size++;
     }
+
+    /// remove the first element
+    public void removeFirst(){
+        if (head == null) throw new RuntimeException("Empty List!");
+        else if (tail == null) {
+            head = null; // Empty list
+        }else{
+            head = head.next;
+            head.prev = null;
+        }
+
+        size--;
+    }
+
+
+
+
+
+
+    /// ******* DEBUG FUNCTIONS *******
 
     public void printTail() {
         System.out.print(tail.value);
     }
 
+    public void printHead(){
+        System.out.print(head.value);
+    }
 
-    /// print the list
+
+    /// print the list - AJUSTAR PARA LISTA COM APENAS UM ELEMENTO OU VAZIA
     public void print() {
+
         Node aux = head;
         Node aux2 = head.next;
         for (int i = 0; i < size; i++) {
