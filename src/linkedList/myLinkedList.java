@@ -47,35 +47,35 @@ public class myLinkedList {
 
     /// remove the first element
     public int removeFirst() {
-        int elementoRemovido;
+        int element;
         if (head == null) throw new RuntimeException("Empty List!");
         else if (tail == null) {
-            elementoRemovido = head.value;
+            element = head.value;
             head = null; // Empty list
         } else {
-            elementoRemovido = head.value;
+            element = head.value;
             head = head.next;
             head.prev = null;
         }
         size--;
-        return elementoRemovido;
+        return element;
     }
 
     ///  remove the last element
     public int removeLast() {
-        int elementoRemovido;
+        int element;
         if (head == null) throw new RuntimeException("Empty List!");
         else if (tail == null) { // Levando em conta que o head é o tail (estranho?)
-            elementoRemovido = head.value;
+            element = head.value;
             head = null;
         } else {
-            elementoRemovido = tail.value;
+            element = tail.value;
             tail = tail.prev;
             tail.next = null;
         }
         size--;
 
-        return elementoRemovido;
+        return element;
     }
 
     /// return the value int the specification index
@@ -90,6 +90,30 @@ public class myLinkedList {
         }
         return aux.value;
 
+    }
+
+    /// return the first element
+    public int getFirst(){
+        if(head == null) throw new RuntimeException("Empty list");
+        return head.value;
+    }
+
+    /// return the last element
+    public int getLast(){
+        if(head == null) throw new RuntimeException("Empty list");
+        if(tail == null) return head.value;
+        else return tail.value;
+    }
+
+
+    /// return the size
+    public int size(){
+        return size-1;
+    }
+
+    /// return list empty
+    public boolean isEmpty(){
+        return size == 0;
     }
 
     /// ******* DEBUG FUNCTIONS *******
