@@ -11,11 +11,11 @@ OPERATIONS:
 6° "getFirst()" -> Returns the first element without removing it. - CHECK
 7° "getLast()" -> Returns the last element without removing it. - CHECK
 8° "removeAt(index)" -> Removes and returns the element at the specified index. - CHECK
-9° "remove(value)" -> Removes the first occurrence of the specified value from the list and returns true.
-10° "contains(x)" -> Checks whether the list contains the specified element.
+9° "remove(value)" -> Removes the first occurrence of the specified value from the list and returns true. - CHECK
+10° "contains(x)" -> Checks whether the list contains the specified element. - CHECK
 11° "size()" -> Returns the number of elements in the list. - CHECK
 12° "isEmpty()" -> Returns true if the list contains no elements. - CHECK
-13° "clear()" -> Removes all elements from the list.
+13° "clear()" -> Removes all elements from the list. - CHECK
 
 Learning goals:
 

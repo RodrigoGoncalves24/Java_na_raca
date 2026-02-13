@@ -3,7 +3,7 @@ package linkedList;
 public class myLinkedList {
     private Node head;
     private Node tail;
-    private int size = 0;
+    private int size = -1;
 
     public myLinkedList() {
     }
@@ -74,7 +74,6 @@ public class myLinkedList {
             tail.next = null;
         }
         size--;
-
         return element;
     }
 
@@ -139,8 +138,7 @@ public class myLinkedList {
         if (isEmpty()) throw new RuntimeException("Empty list!");
 
         int i = 0;
-        int size = size();
-        while(!remove || i <= size){
+        while(!remove && i <= size()){
             if (aux != null){
                 if(aux.value == value){
                     remove = true;
@@ -154,12 +152,11 @@ public class myLinkedList {
 
         }
 
-
         if(remove){
             if (i == 0) {
                 removeFirst(); // se o valor de head for igual ao primeiro elemento
             }
-            else if (i == size()) {
+            else if (i == size) {
                 removeLast(); // se o tail for o valor para remover
             } else {
                 Node prevAux = aux.prev;
@@ -174,9 +171,35 @@ public class myLinkedList {
 
     }
 
+    /// verify that the list contains a specific value
+    public boolean contains(int value){
+        boolean contains = false;
+        Node aux = head;
+
+        for (int i = 0; i < size()-1; i++) {
+            if(aux.value == value){
+                contains = true;
+                break;
+            }
+            aux = aux.next;
+
+        }
+
+        return contains;
+
+
+    }
+
+    /// clear the list
+    public void clear(){
+        head = null;
+        tail = null;
+        size = -1;
+    }
+
     /// return the size
     public int size() {
-        return size - 1;
+        return size;
     }
 
     /// return list empty
@@ -202,7 +225,7 @@ public class myLinkedList {
 
             if (head.next != null) { // se apenas um elemento na lista
                 Node aux2 = head.next;
-                for (int i = 0; i < size; i++) {
+                for (int i = 0; i <= size; i++) {
                     System.out.print(aux.value + " -> ");
                     aux = aux2;
                     if (aux2.next != null) {

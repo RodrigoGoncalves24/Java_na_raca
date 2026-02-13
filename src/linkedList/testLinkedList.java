@@ -116,5 +116,20 @@ public class testLinkedList {
         linkedListInt.print();
         System.out.println("\nSize: "+linkedListInt.size());
 
+        System.out.println("\n\nTest: verify that an specific element exist on the list:");
+        linkedListInt.print();
+        System.out.println("\nVerify that 15 exist: "+linkedListInt.contains(15));
+        System.out.println("\nVerify that 15 exist: "+linkedListInt.contains(9));
+
+        System.out.println("\n\nTest: clear list");
+        linkedListInt.clear();
+        System.out.println("Size: "+linkedListInt.size());
+
+        linkedListInt.addFirst(1);
+        linkedListInt.addFirst(2);
+        linkedListInt.addFirst(3);
+        linkedListInt.print();
+        System.out.println("\nSize: "+linkedListInt.size());
+
     }
 }
