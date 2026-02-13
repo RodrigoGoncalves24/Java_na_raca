@@ -83,5 +83,38 @@ public class testLinkedList {
         System.out.println("Last element: "+linkedListInt.getLast());
         System.out.println("Test with index 0: "+linkedListInt.get(lastElement));
 
+        System.out.println("\nTest: remove element");
+        linkedListInt.print();
+        System.out.println("\nRemove the 2 element: "+linkedListInt.removeAt(2));
+        linkedListInt.print();
+
+        /// Adding more elements
+        linkedListInt.addFirst(10);
+        linkedListInt.addFirst(18);
+        linkedListInt.addFirst(20);
+        linkedListInt.addFirst(9);
+        linkedListInt.addFirst(0);
+        linkedListInt.addFirst(7);
+
+        System.out.println("\n\nTest: remove the first occurrence of an element");
+        System.out.println("Size: "+linkedListInt.size());
+        linkedListInt.print();
+
+        System.out.println("\n\nRemoving the first 7 (head): "+linkedListInt.remove(7));
+        linkedListInt.print();
+        System.out.println("\nSize: "+linkedListInt.size());
+
+        System.out.println("\n\nRemoving the first 15 (tail): "+linkedListInt.remove(15));
+        linkedListInt.print();
+        System.out.println("\nSize: "+linkedListInt.size());
+
+        System.out.println("\n\nRemoving a random element: "+linkedListInt.remove(10));
+        linkedListInt.print();
+        System.out.println("\nSize: "+linkedListInt.size());
+
+        System.out.println("\n\nRemoving an element that don't exist in the list: "+linkedListInt.remove(1000));
+        linkedListInt.print();
+        System.out.println("\nSize: "+linkedListInt.size());
+
     }
 }

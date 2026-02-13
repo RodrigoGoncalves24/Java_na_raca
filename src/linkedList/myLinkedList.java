@@ -93,26 +93,94 @@ public class myLinkedList {
     }
 
     /// return the first element
-    public int getFirst(){
-        if(head == null) throw new RuntimeException("Empty list");
+    public int getFirst() {
+        if (head == null) throw new RuntimeException("Empty list");
         return head.value;
     }
 
     /// return the last element
-    public int getLast(){
-        if(head == null) throw new RuntimeException("Empty list");
-        if(tail == null) return head.value;
+    public int getLast() {
+        if (head == null) throw new RuntimeException("Empty list");
+        if (tail == null) return head.value; // head and tail is the same if it has only one element at the list
         else return tail.value;
     }
 
+    /// remove by the index
+    public int removeAt(int index) {
+        int remove;
+        if (index > size() || index < 0) throw new RuntimeException("Invalid index");
+        if (isEmpty()) throw new RuntimeException("Empty list!");
+        if (index == 0) {
+            remove = removeFirst();
+        } else if (index == size()) {
+            remove = removeLast();
+        }
+        Node aux = head;
+        int i = 0;
+        while (i < index) {
+            aux = aux.next;
+            i++;
+        }
+        remove = aux.value;
+        Node prevAux = aux.prev;
+        Node nextAux = aux.next;
+        prevAux.next = nextAux;
+        nextAux.prev = prevAux;
+
+        size--;
+        return remove;
+    }
+
+    /// remove the first occurrence of the element
+    public boolean remove(int value) {
+        boolean remove = false;
+        Node aux = head;
+
+        if (isEmpty()) throw new RuntimeException("Empty list!");
+
+        int i = 0;
+        int size = size();
+        while(!remove || i <= size){
+            if (aux != null){
+                if(aux.value == value){
+                    remove = true;
+                    break;
+                }
+                aux = aux.next;
+                i++;
+            }else{
+                break;
+            }
+
+        }
+
+
+        if(remove){
+            if (i == 0) {
+                removeFirst(); // se o valor de head for igual ao primeiro elemento
+            }
+            else if (i == size()) {
+                removeLast(); // se o tail for o valor para remover
+            } else {
+                Node prevAux = aux.prev;
+                Node nextAux = aux.next;
+                prevAux.next = nextAux;
+                nextAux.prev = prevAux;
+                size--; // remover head e tail já faz size--
+            }
+        }
+
+        return remove;
+
+    }
 
     /// return the size
-    public int size(){
-        return size-1;
+    public int size() {
+        return size - 1;
     }
 
     /// return list empty
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size == 0;
     }
 
