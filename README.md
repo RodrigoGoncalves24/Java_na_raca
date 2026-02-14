@@ -11,9 +11,10 @@ Cada pasta contém:
 ## Estruturas implementadas
 ✅ Array dinâmico  
 ✅ Set (sem repetição)  
-❌ Map (chave-valor)  
-❌ Pilha  
-❌ Fila  
+✅ Map (chave-valor)  
+✅ Pilha  
+✅ Fila
+✅ LinkedList
 
 ## Objetivo
 Aprimorar minha lógica, revisar estruturas e fortalecer minha base para desenvolvimento mais avançado.
