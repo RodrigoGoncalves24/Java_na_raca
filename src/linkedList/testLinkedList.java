@@ -2,8 +2,8 @@ package linkedList;
 
 public class testLinkedList {
     public static void main(String[] args) {
-        System.out.println("Test with integer values");
-        myLinkedList linkedListInt = new myLinkedList();
+        System.out.println("TEST WITH INTEGER VALUES");
+        myLinkedList<Integer> linkedListInt = new myLinkedList();
 
         System.out.println("\nTest: adding elements at begin of the list");
         linkedListInt.addFirst(5);
@@ -130,6 +130,28 @@ public class testLinkedList {
         linkedListInt.addFirst(3);
         linkedListInt.print();
         System.out.println("\nSize: "+linkedListInt.size());
+
+        System.out.printf("TES WITH STRINGS VALUES");
+        myLinkedList <String> linkedListStr = new myLinkedList<>();
+        linkedListStr.addFirst("House");
+        linkedListStr.addFirst("Dog");
+        linkedListStr.addFirst("Cat");
+        linkedListStr.addFirst("Tree");
+        System.out.println("\n\nPrint the list: ");
+        linkedListStr.print();
+
+        System.out.print("\nHead: ");
+        linkedListStr.printHead();
+        System.out.print("\nTail: ");
+        linkedListStr.printTail();
+
+        System.out.println("\n\nRemoving elements");
+        linkedListStr.removeFirst();
+        linkedListStr.print();
+        System.out.println("\nNew head: ");
+        linkedListStr.printHead();
+        System.out.println("\n\nRandom value: ");
+        System.out.println(linkedListStr.get(2));
 
     }
 }

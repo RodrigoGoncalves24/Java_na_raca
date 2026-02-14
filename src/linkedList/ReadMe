@@ -18,7 +18,12 @@ OPERATIONS:
 13° "clear()" -> Removes all elements from the list. - CHECK
 
 Learning goals:
-
+After this implementation, I noticed significant progress in my learning.
+Working with references and pointers, and ensuring the list remained properly connected after each insertion or removal,
+gave me greater clarity in understanding the methods used in a linked list. It also helped me refine my programming logic and,
+most importantly, deepen my knowledge of fundamental data structures
 
 AI-assisted development:
-
+The use of AI (ChatGPT) focused on explaining how the internal methods of a list work,
+providing analogies to better understand references, especially in insertion and removal operations at both the beginning and
+the end and refining logical processes.

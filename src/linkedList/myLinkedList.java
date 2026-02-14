@@ -1,6 +1,6 @@
 package linkedList;
 
-public class myLinkedList {
+public class myLinkedList<T> {
     private Node head;
     private Node tail;
     private int size = -1;
@@ -9,7 +9,7 @@ public class myLinkedList {
     }
 
     /// add an element at first of the list
-    public void addFirst(int value) {
+    public void addFirst(T value) {
         Node novo = new Node(value);
         if (head == null) {
             head = novo;
@@ -28,7 +28,7 @@ public class myLinkedList {
     }
 
     /// add an element at the end  of the list
-    public void addLast(int value) {
+    public void addLast(T value) {
         Node novo = new Node(value);
         if (head == null) {
             head = novo;
@@ -46,14 +46,14 @@ public class myLinkedList {
     }
 
     /// remove the first element
-    public int removeFirst() {
-        int element;
+    public T removeFirst() {
+        T element;
         if (head == null) throw new RuntimeException("Empty List!");
         else if (tail == null) {
-            element = head.value;
+            element = (T) head.value;
             head = null; // Empty list
         } else {
-            element = head.value;
+            element = (T) head.value;
             head = head.next;
             head.prev = null;
         }
@@ -62,8 +62,8 @@ public class myLinkedList {
     }
 
     ///  remove the last element
-    public int removeLast() {
-        int element;
+    public T removeLast() {
+        Object element;
         if (head == null) throw new RuntimeException("Empty List!");
         else if (tail == null) { // Levando em conta que o head é o tail (estranho?)
             element = head.value;
@@ -74,11 +74,11 @@ public class myLinkedList {
             tail.next = null;
         }
         size--;
-        return element;
+        return (T) element;
     }
 
     /// return the value int the specification index
-    public int get(int index) {
+    public T get(int index) {
         if (index > size || index < 0) throw new RuntimeException("Index don't exist!");
         if (head == null) throw new RuntimeException("List Empty!");
         int i = 0;
@@ -87,26 +87,26 @@ public class myLinkedList {
             aux = aux.next;
             i++;
         }
-        return aux.value;
+        return (T) aux.value;
 
     }
 
     /// return the first element
-    public int getFirst() {
+    public T getFirst() {
         if (head == null) throw new RuntimeException("Empty list");
-        return head.value;
+        return (T) head.value;
     }
 
     /// return the last element
-    public int getLast() {
+    public T getLast() {
         if (head == null) throw new RuntimeException("Empty list");
-        if (tail == null) return head.value; // head and tail is the same if it has only one element at the list
-        else return tail.value;
+        if (tail == null) return (T) head.value; // head and tail is the same if it has only one element at the list
+        else return (T) tail.value;
     }
 
     /// remove by the index
-    public int removeAt(int index) {
-        int remove;
+    public T removeAt(int index) {
+        T remove;
         if (index > size() || index < 0) throw new RuntimeException("Invalid index");
         if (isEmpty()) throw new RuntimeException("Empty list!");
         if (index == 0) {
@@ -120,7 +120,7 @@ public class myLinkedList {
             aux = aux.next;
             i++;
         }
-        remove = aux.value;
+        remove = (T) aux.value;
         Node prevAux = aux.prev;
         Node nextAux = aux.next;
         prevAux.next = nextAux;
@@ -131,7 +131,7 @@ public class myLinkedList {
     }
 
     /// remove the first occurrence of the element
-    public boolean remove(int value) {
+    public boolean remove(T value) {
         boolean remove = false;
         Node aux = head;
 
@@ -172,7 +172,7 @@ public class myLinkedList {
     }
 
     /// verify that the list contains a specific value
-    public boolean contains(int value){
+    public boolean contains(T value){
         boolean contains = false;
         Node aux = head;
 
