@@ -1,0 +1,7 @@
+**** SOME BASIC OPERATIONS ****
+
+- For this directory, a copy of the arrayList structure was implemented
+
+OPERATIONS:
+1° - "insert(x)" -> insert a value in the tree
+2° - "search(x)" -> return true if the value is in the tree
